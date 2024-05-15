@@ -9,8 +9,9 @@ import (
 
 var tabla int
 var err error
+var texto string
 
-func TablasdeMultiplicar(){
+func TablasdeMultiplicar() string {//Regresa un string como e sun solo parametro no se pone entre ()
 	scanner := bufio.NewScanner(os.Stdin)
 	
 	//Mi solucion
@@ -56,8 +57,12 @@ func TablasdeMultiplicar(){
 		fmt.Println("La tabla del " + strconv.Itoa(tabla) + " es: ")
 		
 		for k:=1; k<=10;k++ {
-			fmt.Println(strconv.Itoa(tabla) + " X " + strconv.Itoa(k) + " = " + strconv.Itoa(tabla * k))
+			//Mis solucion
+			//fmt.Println(strconv.Itoa(tabla) + " X " + strconv.Itoa(k) + " = " + strconv.Itoa(tabla * k))
+
+			//solucion instructor
+			texto += fmt.Sprintf("%d X %d = %d \n", tabla,k,tabla*k)
 		}		
 	}
-	
+	return texto
 }

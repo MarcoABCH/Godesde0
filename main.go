@@ -2,7 +2,7 @@ package main
 
 //palabra d einicio siempre es package seguido del archivo actual en este caso main
 import (		
-	"github.com/MarcoABCH/Godesde0/ejercicios"
+	"github.com/MarcoABCH/Godesde0/files"	
 )
 
 func main(){
@@ -47,5 +47,9 @@ func main(){
 	}*/
 
 	//iteraciones.Iterar()
-	ejercicios.TablasdeMultiplicar()
+	//fmt.Println(ejercicios.TablasdeMultiplicar())
+	//files.GrabaTabla()
+
+	//files.SumaTabla()
+	files.LeoArchivo()
 }
