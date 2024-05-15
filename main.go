@@ -1,8 +1,7 @@
 package main
 
 //palabra d einicio siempre es package seguido del archivo actual en este caso main
-import (
-	"fmt"	
+import (		
 	"github.com/MarcoABCH/Godesde0/ejercicios"
 )
 
@@ -12,8 +11,8 @@ func main(){
 	fmt.Println(estado, texto)
 	*/
 
-	numero1, string1 := ejercicios.EsMayorMenor("90")
-	fmt.Println(numero1, string1)
+	//numero1, string1 := ejercicios.EsMayorMenor("90")
+	//fmt.Println(numero1, string1)
 
 	/*
 	if os:= runtime.GOOS; os == "linux" || os == "OS X." {//Pregunta y asigna a la vez, eso es menos código
@@ -34,4 +33,19 @@ func main(){
 	}
 	*/
 		
+	//teclado.IngresoNumeros()
+    /*tabla := 1
+	for {
+		
+		if tabla == 11 {						
+			break
+		}else {			
+			fmt.Println("Estoy en la tabla " + strconv.Itoa(tabla))	
+		}
+		
+		tabla = tabla + 1
+	}*/
+
+	//iteraciones.Iterar()
+	ejercicios.TablasdeMultiplicar()
 }
